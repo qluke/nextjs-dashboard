@@ -1,11 +1,17 @@
+/* 可以使用此文件向应用程序中的所有路由添加CSS规则-例如CSS重置规则、HTML元素（如链接）的站点范围样式等。 */
+/* 您可以在应用程序的任何组件中导入 global.css ，但通常最好将其添加到顶级组件中。 */
+
+/* 用于引入和启用 Tailwind CSS 的基本样式、组件样式和实用工具样式。 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* 接下来的代码块是针对 <input type='number'> 元素的样式设置。这些样式设置主要用于修改 <input type='number'> 元素在不同浏览器中的外观和行为。 */
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
+/* 上述代码块使用了 -moz-appearance 和 appearance 属性，用于在 Firefox 浏览器中将 <input type='number'> 元素的外观设置为文本字段样式，即去掉默认的数值调节器。 */
 
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -16,3 +22,5 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* 上述代码块使用了 -webkit-appearance 属性，并且通过设置为 none，将 <input type='number'> 元素在 WebKit 内核的浏览器（如 Chrome 和 Safari）中的默认数值调节器（内部和外部）隐藏起来，从而禁用数值调节器的显示和操作。 */

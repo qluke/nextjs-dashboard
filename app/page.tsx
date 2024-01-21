@@ -33,7 +33,20 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          {/* Add Hero Images Here  这段代码使用了 Next.js 的 Image 组件来显示两个图片，一个是桌面版本的截图，另一个是移动版本的截图。
+          
+          第一个 Image 组件的属性如下：
+          src：指定了桌面版本截图的图片路径为 "/hero-desktop.png"。
+          width 和 height：分别指定了图片的宽度和高度为 1000 和 760 像素。
+          className：设置了一个 CSS 类名 "hidden md:block"，在移动设备上隐藏该图片，在桌面设备上显示该图片。
+          alt：提供了一个替代文本描述，用于辅助技术和搜索引擎优化。
+
+          第二个 Image 组件的属性如下：
+          src：指定了移动版本截图的图片路径为 "/hero-mobile.png"。
+          width 和 height：分别指定了图片的宽度和高度为 560 和 620 像素。
+          className：设置了一个 CSS 类名 "block md:hidden"，在桌面设备上隐藏该图片，在移动设备上显示该图片。
+          alt：提供了一个替代文本描述，用于辅助技术和搜索引擎优化。
+          */}
           <Image
             src="/hero-desktop.png"
             width={1000}

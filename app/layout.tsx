@@ -2,6 +2,7 @@ import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
   
+// 这段代码的作用是定义 Next.js 应用程序的页面元数据和根布局，以及应用全局样式和特定字体样式。
 export const metadata: Metadata = {
   title: {
     template: '%s | Acme Dashboard',

@@ -41,7 +41,9 @@ export default function NavLinks() {
               },
             )}
           >
+            {/* 在返回的 JSX 中，使用 <LinkIcon className="w-6" /> 的方式来渲染导航链接的图标。这里的 className="w-6" 是为了设置图标的宽度为 6 个单位，可以根据实际需要进行调整。 */}
             <LinkIcon className="w-6" />
+            {/* 在大屏幕上显示一个段落元素，并在其他屏幕尺寸上隐藏。 */}
             <p className="hidden md:block">{link.name}</p>
           </Link>
         );
